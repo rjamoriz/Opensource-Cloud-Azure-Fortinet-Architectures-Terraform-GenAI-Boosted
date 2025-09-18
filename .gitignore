@@ -33,7 +33,7 @@ ENV/
 .env.*
 
 # IDE
-.vscode/
+# .vscode/ - Allow VS Code workspace settings for this project
 .idea/
 *.swp
 *.swo

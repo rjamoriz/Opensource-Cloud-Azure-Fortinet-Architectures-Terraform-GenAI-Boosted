@@ -1,0 +1,107 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Streamlit App",
+            "type": "shell",
+            "command": "${workspaceFolder}/fortinetvmazure/bin/streamlit",
+            "args": [
+                "run",
+                "${workspaceFolder}/azureappintegration/fortigate-azure-chatbot/src/app.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "default"
+            }
+        },
+        {
+            "label": "Install Python Requirements",
+            "type": "shell",
+            "command": "${workspaceFolder}/fortinetvmazure/bin/pip",
+            "args": [
+                "install",
+                "-r",
+                "${workspaceFolder}/azureappintegration/fortigate-azure-chatbot/requirements.txt"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Run Tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/fortinetvmazure/bin/pytest",
+            "args": [
+                "${workspaceFolder}/azureappintegration/fortigate-azure-chatbot/tests",
+                "-v"
+            ],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Format Python Code",
+            "type": "shell",
+            "command": "${workspaceFolder}/fortinetvmazure/bin/black",
+            "args": [
+                "${workspaceFolder}/azureappintegration/fortigate-azure-chatbot/src"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Terraform Init",
+            "type": "shell",
+            "command": "terraform",
+            "args": ["init"],
+            "options": {
+                "cwd": "${workspaceFolder}/fortigate-terraform-deploy/azure/7.4"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Terraform Plan",
+            "type": "shell",
+            "command": "terraform",
+            "args": ["plan"],
+            "options": {
+                "cwd": "${workspaceFolder}/fortigate-terraform-deploy/azure/7.4"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}

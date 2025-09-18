@@ -1,0 +1,34 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "python.defaultInterpreterPath": "./fortinetvmazure/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "files.associations": {
+        "*.tf": "terraform",
+        "*.tfvars": "terraform"
+    },
+    "terraform.languageServer.enable": true,
+    "streamlit.runOnSave": false,
+    "mcp.servers": {
+        "notion": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-notion"],
+            "env": {
+                "NOTION_API_KEY": "${NOTION_API_KEY}"
+            }
+        }
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true,
+        "terraform": true,
+        "python": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.editor.enableAutoCompletions": true
+}
