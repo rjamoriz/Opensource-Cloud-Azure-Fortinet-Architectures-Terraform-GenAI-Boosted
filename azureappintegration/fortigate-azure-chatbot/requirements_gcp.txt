@@ -1,0 +1,49 @@
+# Google Cloud Platform Integration Dependencies
+# FortiGate Multi-Cloud Deployment Assistant
+
+# Core Google Cloud SDK
+google-cloud-compute>=1.19.0
+google-cloud-resource-manager>=1.12.0
+google-cloud-iam>=2.15.0
+google-cloud-billing>=1.12.0
+
+# AI and ML Services
+google-cloud-aiplatform>=1.60.0
+google-cloud-speech>=2.25.0
+google-cloud-texttospeech>=2.18.0
+google-cloud-translate>=3.15.0
+
+# Monitoring and Logging
+google-cloud-monitoring>=2.21.0
+google-cloud-logging>=3.11.0
+google-cloud-error-reporting>=1.13.0
+
+# Storage and Data
+google-cloud-storage>=2.18.0
+google-cloud-bigquery>=3.25.0
+
+# Authentication
+google-auth>=2.30.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+
+# Infrastructure as Code
+python-terraform>=0.10.1
+google-cloud-deployment-manager>=1.1.0
+
+# Additional utilities
+google-api-python-client>=2.140.0
+google-cloud-secret-manager>=2.20.0
+google-resumable-media>=2.7.0
+
+# Cost optimization
+google-cloud-recommender>=2.14.0
+google-cloud-asset>=3.27.0
+
+# Networking
+google-cloud-dns>=0.35.0
+google-cloud-network-management>=1.10.0
+
+# Security
+google-cloud-security-center>=1.31.0
+google-cloud-kms>=2.24.0

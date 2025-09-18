@@ -1,0 +1,31 @@
+# Voice Processing Dependencies for FortiGate Azure Chatbot
+# Enhanced voice chat with multiple AI models
+
+# Core OpenAI dependencies
+openai>=1.0.0
+
+# Audio processing
+pydub>=0.25.1
+soundfile>=0.12.1
+librosa>=0.10.0
+
+# Real-time audio streaming (optional)
+streamlit-webrtc>=0.45.0
+
+# Audio format support
+ffmpeg-python>=0.2.0
+
+# Speech recognition alternatives (fallback)
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.11
+
+# Text-to-speech alternatives
+gTTS>=2.3.0
+pyttsx3>=2.90
+
+# Audio visualization
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# Web components for custom audio interfaces
+streamlit-components-v1>=0.0.1

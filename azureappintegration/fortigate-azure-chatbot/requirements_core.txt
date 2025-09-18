@@ -1,0 +1,44 @@
+# Core Dependencies for FortiGate Azure Chatbot
+# Essential packages for basic functionality
+
+# Streamlit and UI
+streamlit>=1.28.0
+streamlit-echarts>=0.4.0
+
+# OpenAI Integration
+openai>=1.0.0
+
+# Audio Processing
+speechrecognition>=3.10.0
+pydub>=0.25.1
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# HTTP and Networking
+requests>=2.31.0
+
+# Configuration and Environment
+python-dotenv>=1.0.0
+
+# Logging and Utilities
+colorama>=0.4.6
+
+# Azure SDK (Core)
+azure-identity>=1.15.0
+azure-mgmt-compute>=30.0.0
+azure-mgmt-network>=25.0.0
+azure-mgmt-resource>=23.0.0
+
+# Google Cloud (Core)
+google-cloud-compute>=1.15.0
+
+# Terraform Integration
+python-terraform>=0.10.1
+
+# JSON and Data Handling
+pydantic>=2.5.0
+
+# Date and Time
+python-dateutil>=2.8.2

@@ -1,0 +1,42 @@
+# Multi-Cloud FortiGate MCP Server Dependencies
+
+# Azure SDK
+azure-identity==1.15.0
+azure-mgmt-resource==23.0.1
+azure-mgmt-compute==30.4.0
+azure-mgmt-network==25.2.0
+azure-mgmt-security==6.0.0
+azure-mgmt-costmanagement==4.0.1
+
+# Google Cloud SDK
+google-cloud-compute==1.14.1
+google-cloud-asset==3.20.1
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+
+# Encryption and Security
+cryptography==41.0.7
+pycryptodome==3.19.0
+
+# HTTP and API
+requests==2.31.0
+urllib3==2.0.7
+
+# Data Processing
+pandas==2.1.4
+numpy==1.24.4
+
+# Configuration and Environment
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Logging and Monitoring
+structlog==23.2.0
+
+# Testing (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-mock==3.12.0
+
+# Streamlit Integration
+streamlit>=1.28.0
